@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-21dp"
+        tools:layout_editor_absoluteY="39dp">
+
+        <ImageView
+            android:id="@+id/foodimage"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="38dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/foodname"
+            app:layout_constraintEnd_toEndOf="@+id/information"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.533"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/foodname"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="256dp"
+            android:fontFamily="@font/nanumbarunpenr"
+            android:gravity="center"
+            android:text="foodname"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/information"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/information"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="204dp"
+            android:fontFamily="@font/nanumbarunpenr"
+            android:gravity="center"
+            android:text="information"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/btn_previous"
+            app:layout_constraintEnd_toEndOf="@+id/choose"
+            app:layout_constraintStart_toEndOf="@+id/choose"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/choose"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="198dp"
+            android:layout_marginTop="630dp"
+            android:background="#00FF0000"
+            android:drawableLeft="@drawable/icon_checkxml"
+            android:fontFamily="@font/nanumbarunpenr"
+            app:layout_constraintEnd_toStartOf="@+id/another"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/another"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="139dp"
+            android:layout_marginTop="630dp"
+            android:background="#00FF0000"
+            android:drawableLeft="@drawable/icon_replyxml"
+            android:fontFamily="@font/nanumbarunpenr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/choose"
+            app:layout_constraintTop_toBottomOf="@+id/information"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/btn_previous"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginBottom="4dp"
+            android:drawableBottom="@drawable/icon_arrow2xml"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="585dp" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
